@@ -6,23 +6,23 @@ var initialData = {
   // The "user" collection. Contains all of the users in our Facebook system.
   "users": {
     // This user has id "1".
-    "000000000000000000000001": {
+    "1": {
       "_id": new ObjectID("000000000000000000000001"),
       "fullName": "Someone",
       "feed": new ObjectID("000000000000000000000001")
     },
-    "000000000000000000000002": {
+    "2": {
       "_id": new ObjectID("000000000000000000000002"),
       "fullName": "Someone Else",
       "feed": new ObjectID("000000000000000000000002")
     },
-    "000000000000000000000003": {
+    "3": {
       "_id": new ObjectID("000000000000000000000003"),
       "fullName": "Another Person",
       "feed": new ObjectID("000000000000000000000003")
     },
     // This is "you"!
-    "000000000000000000000004": {
+    "4": {
       "_id": new ObjectID("000000000000000000000004"),
       "fullName": "John Vilk",
       // ID of your feed.
@@ -32,7 +32,7 @@ var initialData = {
   // The 'feedItems' collection. Contains all of the feed items on our Facebook
   // system.
   "feedItems": {
-    "000000000000000000000001": {
+    "1": {
       "_id": new ObjectID("000000000000000000000001"),
       // A list of users that liked the post. Here, "Someone Else" and "Another Person"
       // liked this particular post.
@@ -72,7 +72,7 @@ var initialData = {
         }
       ]
     },
-    "000000000000000000000002": {
+    "2": {
       "_id": new ObjectID("000000000000000000000002"),
       "likeCounter": [],
       "type": "statusUpdate",
@@ -87,20 +87,20 @@ var initialData = {
   },
   // "feeds" collection. Feeds for each FB user.
   "feeds": {
-    "000000000000000000000004": {
+    "4": {
       "_id": new ObjectID("000000000000000000000004"),
       // Listing of FeedItems in the feed.
       "contents": [new ObjectID("000000000000000000000002"), new ObjectID("000000000000000000000001")]
     },
-    "000000000000000000000003": {
+    "3": {
       "_id": new ObjectID("000000000000000000000003"),
       "contents": []
     },
-    "000000000000000000000002": {
+    "2": {
       "_id": new ObjectID("000000000000000000000002"),
       "contents": []
     },
-    "000000000000000000000001": {
+    "1": {
       "_id": new ObjectID("000000000000000000000001"),
       "contents": []
     }
